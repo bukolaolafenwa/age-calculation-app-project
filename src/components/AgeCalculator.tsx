@@ -115,6 +115,7 @@ const month = Number(inputData.month);
 const year = Number(inputData.year);
 
 const today = new Date();
+console.log(today);
 // invalid days
 if (!newErrors.month && (month < 1 || month > 12)) {
   newErrors.month = "Please input a valid month";
@@ -154,8 +155,8 @@ if (Object.keys(newErrors).length > 0) {
 // console.log("Form submission successful");
 // age calculation logic using JavaScript Date objects
 let years = today.getFullYear() - year;
-let months = today.getMonth() - month - 1;
-let days = today.getDay() - day;
+let months = today.getMonth() - (month - 1);
+let days = today.getDate() - day;
 
 if (days < 0) {
   months--;
