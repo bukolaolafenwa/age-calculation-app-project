@@ -1,4 +1,5 @@
 
+import { Analytics } from '@vercel/analytics/react'
 import './App.css'
 import AgeCalculator from './components/AgeCalculator'
 
@@ -8,6 +9,7 @@ function App() {
     <>
       
 <AgeCalculator />
+  <Analytics />
     </>
   )
 }

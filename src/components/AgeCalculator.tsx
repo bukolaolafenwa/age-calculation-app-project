@@ -32,7 +32,7 @@ year: "",
 });
 
 // STEP 4 :  input handler
-// DTEP 14 - UPDATE HANDLER TO MAKE ERROR MESSAGES DISAPPEAR WHEN USER RETYPES
+// STEP 14 - UPDATE HANDLER TO MAKE ERROR MESSAGES DISAPPEAR WHEN USER RETYPES
 const handleChange =(e: React.ChangeEvent<HTMLInputElement>)=> {
   const { name, value } = e.target;
 // numeric-only input handling 
